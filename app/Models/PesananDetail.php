@@ -10,4 +10,9 @@ class PesananDetail extends Model
     {
         return $this->belongsTo(Pesanan::class, 'pesanan_id', 'id');
     }
+
+    public function product()
+    {
+        return $this->belongsTo(Pesanan::class, 'product_id', 'id');
+    }
 }
