@@ -20,7 +20,6 @@ Auth::routes();
 
 //(livewire v2.x)
 Route::get('/', \App\Http\Livewire\home::class)->name('home');
-Route::get('/', \App\Http\Livewire\home::class)->name('a');
 
 // Route::get('/products', \App\Http\Livewire\productindex::class);
 
