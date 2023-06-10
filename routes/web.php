@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,4 +19,8 @@ Auth::routes();
 
 
 //(livewire v2.x)
-Route::get('/', \App\Http\Livewire\home::class);
+Route::get('/', \App\Http\Livewire\home::class)->name('home');
+
+// Route::get('/products', \App\Http\Livewire\productindex::class);
+
+Route::get('/products', \App\Http\Livewire\ProductIndex::class)->name('products');

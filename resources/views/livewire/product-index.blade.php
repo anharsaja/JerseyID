@@ -2,34 +2,42 @@
 
 @section('content')
 
+
 <div class="container">
-    <!-- Banner -->
-    <div class="banner">
-        <img src="{{ url('assets/slider/slider1.png') }}" alt="">
+    <div class="row mb-3">
+        <div class="col">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="{{ route('home') }}" class="text-dark">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">List Jersey</li>
+                </ol>
+            </nav>
+
+        </div>
     </div>
 
-    <!-- Pilih liga -->
-    <section class="pilih-liga mt-4">
-        <h3><strong>PILIH LIGA</strong></h3>
-        <div class="row mt-4">
-            @foreach ($ligas as $liga)
-            <div class="col">
-                <div class="card shadow">
-                    <div class="card-body text-center">
-                        <img src="{{ url('assets/liga') }}/{{ $liga->gambar }}" class="img-fluid" alt="">
-                    </div>
-                </div>
-            </div>
-            @endforeach
+
+
+    <div class="row">
+        <div class="col">
+            <h2>List <strong>Jersey</strong></h2>
         </div>
-    </section>
+        <div class="col">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">@</span>
+                <input type="text" class="form-control" placeholder="Search . . ." aria-label="Search" aria-describedby="basic-addon1">
+            </div>
+
+        </div>
+    </div>
+
+
 
     <!-- Best product -->
-    <section class="product mt-5 mb-5">
-        <h3><strong>BEST PRODUCTS</strong></h3>
+    <section class="product mt-2 mb-5">
         <div class="row mt-4">
             @foreach ($products as $product)
-            <div class="col">
+            <div class="col-md-3 mb-4">
                 <div class="card">
                     <div class="card-body text-center">
                         <img src="{{ url('assets/jersey') }}/{{ $product->gambar }}" class="img-fluid" alt="">
@@ -50,9 +58,13 @@
                 </div>
             </div>
             @endforeach
+            <div class="row">
+                <div class="col">
+                    {{ $products -> Links() }}
+                </div>
+            </div>
         </div>
     </section>
-
 </div>
 
 
