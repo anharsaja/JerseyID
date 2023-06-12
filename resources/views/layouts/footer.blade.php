@@ -1,4 +1,4 @@
-<footer>
+<!-- <footer>
     <hr>
     <div class="container">
         <div class="row">
@@ -9,4 +9,4 @@
             </div>
         </div>
     </div>
-</footer>
+</footer> -->

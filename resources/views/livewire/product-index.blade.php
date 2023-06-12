@@ -17,20 +17,19 @@
     </div>
 
 
-
     <div class="row">
-        <div class="col">
+        <div class="col-md-9">
             <h2>List <strong>Jersey</strong></h2>
         </div>
-        <div class="col">
+        <div class="col-md-3">
             <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon1">@</span>
-                <input type="text" class="form-control" placeholder="Search . . ." aria-label="Search" aria-describedby="basic-addon1">
+                <input wire:model="search" type="text" class="form-control" placeholder="Search . . ." aria-label="Search" aria-describedby="basic-addon1">
+                <span class="input-group-text" id="basic-addon1">
+                    <i class="fas fa-search"></i>
+                </span>
             </div>
-
         </div>
     </div>
-
 
 
     <!-- Best product -->

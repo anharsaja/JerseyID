@@ -17,6 +17,10 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
+// Route::get('/', function () {
+//     return view('index');
+// });
+
 
 //(livewire v2.x)
 Route::get('/', \App\Http\Livewire\home::class)->name('home');
