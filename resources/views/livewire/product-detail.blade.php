@@ -1,3 +1,9 @@
+@extends('layouts.app')
+
+@section('content')
+
 <div>
-    <h2>Product Detail</h2>
+    <h2>Product Detail : {{ $product -> nama }}</h2>
 </div>
+
+@endsection
