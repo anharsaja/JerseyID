@@ -23,7 +23,7 @@
         </div>
         <div class="col-md-3">
             <div class="input-group mb-3">
-                <input wire:model="search" type="text" class="form-control" placeholder="Search . . ." aria-label="Search" aria-describedby="basic-addon1">
+                <input name="search" type="text" class="form-control" placeholder="Search . . ." aria-label="Search" aria-describedby="basic-addon1">
                 <span class="input-group-text" id="basic-addon1">
                     <i class="fas fa-search"></i>
                 </span>
