@@ -26,7 +26,10 @@
 
     <!-- Best product -->
     <section class="product mt-5 mb-5">
-        <h3><strong>BEST PRODUCTS</strong></h3>
+        <h3>
+            <strong>BEST PRODUCTS</strong>
+            <a href="{{ route('products') }}" class="btn btn-dark float-right hantu"><i class="fas fa-eye"></i> Lihat Semua</a>
+        </h3>
         <div class="row mt-4">
             @foreach ($products as $product)
             <div class="col">
@@ -43,7 +46,7 @@
                         <!-- details -->
                         <div class="row mt-2">
                             <div class="col-md-12">
-                                <a href="#" class="btn btn-dark btn-block">Details</a>
+                                <a href="#" class="btn btn-dark btn-block"><i class="fas fa-eye"></i> Details</a>
                             </div>
                         </div>
                     </div>

@@ -35,3 +35,9 @@ body {
     width: 100%;
     border-radius: 10px;
 }
+
+.hantu {
+    width: 11%;
+    border-radius: 10px;
+    float: right;
+}
