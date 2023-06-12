@@ -21,9 +21,8 @@
                         </a>
                         <ul class="dropdown-menu">
                             @foreach($ligas as $liga)
-                            <li><a class="dropdown-item" href="#">{{ $liga -> nama }}</a></li>
+                            <li><a class="dropdown-item" href="{{ route('products.liga', $liga->id) }}">{{ $liga -> nama }}</a></li>
                             @endforeach
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>

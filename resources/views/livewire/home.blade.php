@@ -14,11 +14,13 @@
         <div class="row mt-4">
             @foreach ($ligas as $liga)
             <div class="col">
-                <div class="card shadow">
-                    <div class="card-body text-center">
-                        <img src="{{ url('assets/liga') }}/{{ $liga->gambar }}" class="img-fluid" alt="">
+                <a href="{{ route('products.liga', $liga->id) }}">
+                    <div class="card shadow">
+                        <div class="card-body text-center">
+                            <img src="{{ url('assets/liga') }}/{{ $liga->gambar }}" class="img-fluid" alt="">
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             @endforeach
         </div>
