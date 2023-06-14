@@ -24,7 +24,7 @@ class ProductIndex extends Component
             $products = Product::where('nama', 'like', '%' . $this->search . '%')->paginate(8);
         } else {
             $products = Product::paginate(8);
-        } 
+        }
 
         return view('livewire.product-index', [
             'products' => $products,

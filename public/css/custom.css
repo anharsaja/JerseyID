@@ -41,3 +41,9 @@ body {
     border-radius: 10px;
     float: right;
 }
+
+.gambar-product {
+    background-color: #f1f1f1;
+    border-width: 0;
+    border-radius: 20px;
+}
