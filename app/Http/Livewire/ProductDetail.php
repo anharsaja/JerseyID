@@ -8,7 +8,7 @@ use Livewire\Component;
 class ProductDetail extends Component
 {
 
-    public $product;
+    public $product, $jumlah_pesanan, $nama, $nomor;
     
     public function mount($id)
     {

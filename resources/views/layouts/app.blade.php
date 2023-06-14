@@ -22,8 +22,11 @@
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
     <link href="{{ asset('fontawesome/css/all.min.css') }}" rel="stylesheet">
 
+
     <livewire:styles />
     <livewire:scripts />
+
+
 
 </head>
 
@@ -34,7 +37,7 @@
 
         <main class="py-4">
             @yield('content')
-            
+
             @include('layouts.footer')
         </main>
 
