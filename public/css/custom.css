@@ -36,6 +36,13 @@ body {
     border-radius: 10px;
 }
 
+.btn-success {
+    width: 100%;
+    border-radius: 10px;
+    background-color: gren;
+}
+
+
 .hantu {
     width: 11%;
     border-radius: 10px;
